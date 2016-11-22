@@ -1,16 +1,24 @@
 {
-  "name": "node-starter",
-  "version": "0.0.0",
+  "name": "manip-starter",
+  "version": "0.0.1",
   "engines": {
     "node": "6.2.1"
   },
-  "description": "",
+  "description": "crop-loader: Image cropping loader for webpack (for using sprites etc.)",
   "main": "index.js",
   "browser": "src/index.js",
   "scripts": {
     "start": "webpack-dev-server --inline --hot --content-base dist",
     "lint": "./node_modules/.bin/eslint --fix --cache ."
   },
+  "author": "quinn",
+  "license": "MIT",
+  "keywords": [
+    "sprite",
+    "webpack",
+    "image",
+    "crop"
+  ],
   "dependencies": {
     "bluebird": "^3.4.6",
     "radium": "^0.18.1",
@@ -18,7 +26,13 @@
     "react-art": "^0.15.1",
     "react-dom": "^15.3.2",
     "react-draggable": "^2.2.2",
-    "react-motion": "^0.4.4"
+    "react-motion": "^0.4.4",
+
+    "extend": "^2.0.1",
+    "gm": "^1.18.1",
+    "loader-utils": "^0.2.9",
+    "lodash.reduce": "^3.1.2",
+    "lodash.set": "^3.7.4"
   },
   "devDependencies": {
     "babel-cli": "^6.14.0",
@@ -60,6 +74,4 @@
     "webpack-dev-server": "^2.1.0-beta.5",
     "webpack-merge": "^0.14.1"
   },
-  "author": "HC",
-  "license": "ISC"
 }
