@@ -1,6 +1,7 @@
 let webpack       = require('webpack')
 ,   path          = require('path')
 ,   ExtractPlugin = require('extract-text-webpack-plugin')
+,   HtmlPlugin    = require('html-webpack-plugin')
 ,   output        = path.resolve('./dist')
 ,   production    = process.env.NODE_ENV === 'production'
 ,   imageTest     = /\.(tif?f|png|gif|jpe?g|svg|mp4|otf|ttf|cur)$/i
@@ -17,6 +18,10 @@ let webpack       = require('webpack')
 			'node_modules'
 		]
 	},
+
+	plugins: [
+		new HtmlPlugin({})
+	],
 
 	modules: {
 		loaders: [
