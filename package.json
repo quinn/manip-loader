@@ -1,10 +1,10 @@
 {
   "name": "manip-starter",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "node": "6.2.1"
   },
-  "description": "crop-loader: Image cropping loader for webpack (for using sprites etc.)",
+  "description": "crop-loader: Image cropping loader for webpack (for using sprites etc.). gm-loader: Load imported Image's meta data, and some properties",
   "main": "index.js",
   "browser": "src/index.js",
   "scripts": {
@@ -17,7 +17,10 @@
     "sprite",
     "webpack",
     "image",
-    "crop"
+    "crop",
+    "gm-loader",
+    "webpack",
+    "loader"
   ],
   "dependencies": {
     "bluebird": "^3.4.6",
@@ -73,5 +76,5 @@
     "webpack": "^2.1.0-beta.25",
     "webpack-dev-server": "^2.1.0-beta.5",
     "webpack-merge": "^0.14.1"
-  },
+  }
 }
