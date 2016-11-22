@@ -6,8 +6,9 @@
   },
   "description": "",
   "main": "index.js",
+  "browser": "src/index.js",
   "scripts": {
-    "heroku-postbuild": "script/build",
+    "start": "webpack-dev-server --inline --hot --content-base dist",
     "lint": "./node_modules/.bin/eslint --fix --cache ."
   },
   "dependencies": {
